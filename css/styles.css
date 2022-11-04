@@ -125,12 +125,62 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  color: var(--footer-color);
-  background-color: var(--hover-color);
+  color: var(--logo-color);
+  background-color: var(--footer-color);
   cursor: pointer;
   border-radius: 4px;
   border: none;
   padding: 10px 41px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.first-button:hover {
+  border-radius: 4px;
+  color: var(--footer-color);
+  background-color: var(--hover-color);
+  border-color: var(--hover-color);
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: hidden;
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  transform: translate(-50%, -50%);
+  background-color: var(--footer-color);
+}
+.icon-Vector {
+  width: 30px;
+  height: 30px;
 }
 .main-first-discription {
   color: var(--footer-color);
@@ -271,8 +321,8 @@ body {
   padding-left: 0;
 }
 .customers li:hover {
-  --color1: var(--hover-color);
-  --color1: var(--hover-color);
+  --color3: var(--hover-color);
+  --color3: var(--hover-color);
   border-color: var(--hover-color);
 }
 
@@ -314,7 +364,7 @@ a.footer-social-media {
 .footer-social-media li:hover {
   background-color: var(--hover-color);
   transition: all 0.4s;
-  --color1: var(--footer-color);
+  --color3: var(--footer-color);
 }
 .footer-social-media h3 {
   font-weight: 700;
@@ -426,11 +476,11 @@ a.footer-social-media {
 .social-media li:hover,
 .social-media li:focus {
   background-color: var(--hover-color);
-  --color1: var(--footer-color);
+  --color3: var(--footer-color);
   transition: 0.4s;
 }
 .contact-discription:hover,
 .contact-discription:focus {
-  --color2: var(--hover-color);
-  --color2: var(--hover-color);
+  --color4: var(--hover-color);
+  --color4: var(--hover-color);
 }
