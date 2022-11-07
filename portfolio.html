@@ -20,35 +20,46 @@
     />
   </head>
   <body>
-    <header class="header-description">
+    <header>
       <div class="container">
         <div class="header-nav">
           <a class="title-discription" href="#WebStudio"
             ><span class="weblogo">Web</span>Studio</a
           >
-          <nav>
-            <ul class="nav-menu">
+          <nav class="nav-content">
+            <ul class="list nav-menu">
               <li>
-                <a class="menu-discription" href="./index.html">Agencja</a>
+                <a class="link" href="./index.html">Agencja</a>
               </li>
               <li>
-                <a class="menu-discription" href="./portfolio.html"
+                <a class="link portfolio-discription" href="./portfolio.html"
                   >Portfolio</a
                 >
               </li>
-
-              <li><a class="menu-discription" href="/Kontakt">Kontakt</a></li>
+              <li>
+                <a class="link contact-discription" href="/Kontakt">Kontakt</a>
+              </li>
             </ul>
           </nav>
           <ul class="contact-menu">
             <li>
               <a class="contact-discription" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+                ><svg width="16 " height="12" class="icon-mail">
+                  <use
+                    href="./images/icons.svg/icons.svg#icon-envelope-1"
+                  ></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
             <li>
               <a class="contact-discription" href="tel:+48111111111"
-                >+48 111 111 111</a
+                ><svg width="10" height="16" class="icon-mail">
+                  <use
+                    href="./images/icons.svg/icons.svg#icon-smartphone"
+                  ></use>
+                </svg>
+                +48 111 111 111</a
               >
             </li>
           </ul>
@@ -81,11 +92,19 @@
         <div class="container">
           <ul class="work-progres">
             <li class="work-content">
-              <img
-                src="./images/image1portfolio.jpg"
-                alt="ekran laptopa"
-                height="294"
-              />
+              <div class="photo-overlay">
+                <img
+                  src="./images/image1portfolio.jpg"
+                  alt="ekran laptopa"
+                  height="294"
+                />
+                <div class="overlay">
+                  Technocrack jest popularną platformą wykorzystywaną do
+                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                  platformę do celów szpiegowskich i ataków na niezabezpieczone
+                  serwery konkurencji
+                </div>
+              </div>
               <div>
                 <h3 class="project-name">Technocrack</h3>
                 <p class="project-discription">Strona internetowa</p>
