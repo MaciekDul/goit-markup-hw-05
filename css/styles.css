@@ -502,9 +502,7 @@ a.footer-social-media {
 .overlay {
   position: absolute;
   display: flex;
-  align-items: center;
-
-  width: 100%;
+  padding: 49px 45px 49px 24px;
   height: 101%;
   top: 0;
 
